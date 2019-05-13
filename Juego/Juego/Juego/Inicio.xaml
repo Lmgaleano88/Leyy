@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Juego.Inicio">
+
+    <ContentPage.Content>
+        <Grid>
+            <!-- Place new controls here -->
+            <Image Source="https://i.pinimg.com/564x/9e/c8/b6/9ec8b64155f1e992db5d51529ca38921.jpg"  Aspect="AspectFill"
+                   Opacity="0.4"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Menu Principal"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                Grid.Column="0"
+                Grid.Row="0"
+                TextColor="Black"
+                FontSize="20"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="incio" 
+                          TextColor ="White"
+                          Text="Registrar un juego" 
+                          BackgroundColor="CadetBlue"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"
+                          Grid.Row="1"
+                          Grid.Column="0"
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple" 
+                          Margin="30, 0, 30, 0"/>
+                <Button x:Name="visualizar" 
+                          TextColor ="White"
+                          Text="Visualizar juegos" 
+                          BackgroundColor="CadetBlue"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"
+                          Grid.Row="2"
+                          Grid.Column="0"
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple" 
+                          Margin="30, 0, 30, 0"/>
+                <Button x:Name="Informacion" 
+                          TextColor ="White"
+                          Text="Informacion de videojuegos" 
+                          BackgroundColor="CadetBlue"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"
+                          Grid.Row="3"
+                          Grid.Column="0"
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple" 
+                          Margin="30, 0, 30, 0"/>
+                <Button x:Name="Licencias" 
+                          TextColor ="White"
+                          Text="Licencias disponibles" 
+                          BackgroundColor="CadetBlue"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"
+                          Grid.Row="4"
+                          Grid.Column="0"
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple" 
+                          Margin="30, 0, 30, 0"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

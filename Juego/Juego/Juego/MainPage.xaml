@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Juego"
+             x:Class="Juego.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <!-- Place new controls here -->
+            <Image Source="wallpaper.jpg"  Aspect="AspectFill"/>
+            <BoxView Color="CadetBlue" Opacity="0.6" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="iconoo.png" 
+                       WidthRequest="100" HeightRequest="100" Margin="0,50,0,0"/>
+                <Label Text="¿Ya eres usuario?" HorizontalOptions="Center" Grid.Row="1" 
+                           TextColor="Black" />
+
+                <StackLayout Grid.Row="1" Padding="10, 20">
+                    <Entry Placeholder="Email" PlaceholderColor="Black"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="Black" IsPassword="True"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="¿Recuperar contraseña?" TextColor="Black" FontAttributes="Bold" />
+                    </StackLayout>
+                    <Button x:Name="incio" 
+                          TextColor ="White"
+                          Text="Inicio" 
+                          BackgroundColor="CadetBlue"                             
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple"  />
+                    <Button x:Name="Crear" 
+                          TextColor ="White"
+                          Text="Registrase" 
+                          BackgroundColor="CadetBlue"   
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple"/>
+
+                    <Label Text="Inicia sesion con" HorizontalOptions="Center" Grid.Row="2" 
+                           TextColor="Black" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Image Grid.Row="0" Source="logf.png" WidthRequest="45" HeightRequest="45" />
+                        <Image Grid.Row="0" Source="gmlo.png" WidthRequest="45" HeightRequest="45" />
+                        <Image Grid.Row="0" Source="inst.png" WidthRequest="45" HeightRequest="45" />
+                    </StackLayout>
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
