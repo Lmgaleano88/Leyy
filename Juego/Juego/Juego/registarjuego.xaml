@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Juego.registarjuego">
+    <ContentPage.Content>
+        <Grid>
+            <!-- Place new controls here -->
+            <Image Source="https://image.freepik.com/vector-gratis/fondo-transparente-videojuegos_6997-1230.jpg"  Aspect="AspectFill"
+                   Opacity="0.2"/>
+            <StackLayout Margin="0,50">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Juego" Grid.Row="0" Grid.Column="0" Placeholder="Nombre del juego" Keyboard="Text"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="categoria" Grid.Row="0" Grid.Column="0" Placeholder="Categoria" MaxLength="100" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Tamaño" Grid.Row="0" Grid.Column="0" Placeholder="Tamaño de juego" Keyboard="Text" />
+                    </Grid>
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Precio" Grid.Row="0" Grid.Column="0" Placeholder="Precio" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Cantidad" Grid.Row="0" Grid.Column="0" Placeholder="Cantidad de licencias disponibles" MaxLength="3" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                
+                <Button Text="Guardar" 
+                    BorderRadius="10"
+                    BorderWidth="1"
+                    BackgroundColor="CadetBlue"
+                    BorderColor="Purple"
+                    TextColor="White"
+                    Margin="30,0,30,0"
+                    />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
