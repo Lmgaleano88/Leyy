@@ -4,9 +4,8 @@
              x:Class="Juego.informaciondejuego">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text=" Existen juegos competitivos, donde los jugadores tienen que lograr un objetivo, y juegos no competitivos, donde los jugadores buscan simplemente disfrutar de la actividad. 
+                   Los juegos normalmente se diferencian de los trabajos por el objeto de su realización"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

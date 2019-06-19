@@ -13,6 +13,7 @@ namespace Juego
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+            Page = new NavigationPage(new visualizarjuego());
             Page = new NavigationPage(new Inicio());
             Page = new NavigationPage(new registro());
 
